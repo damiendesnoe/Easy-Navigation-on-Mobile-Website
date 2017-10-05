@@ -1,12 +1,26 @@
-ul li {
-	list-style: none;
-	display: inline;
-}
-
 /* Instructions to show the results on a computer using the same size of an iPhone's screen */
 @media only screen and (max-width: 668px) {
-	.easy-nav {
-		
+	* {
+		margin: 0;
+		padding: 0;
 	}
 	
+	.easy-nav, .easy-nav > ul > li {
+		list-style: none;
+		display: inline-block;
+		width: 100%;
+		margin: 4px 0;
+	}
+	
+	.easy-nav > ul > li > a {
+		display: inline-block;
+		width: 100%;
+		line-height: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: 1px solid #DDD;
+		color: #999;
+		text-align: center;
+		text-decoration: none;
+	}
 }
