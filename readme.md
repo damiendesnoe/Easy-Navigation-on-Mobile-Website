@@ -18,3 +18,5 @@ SPECIFICATIONS
 - The menu button and the close button should be on the same place on the screen
 - The menu/close button should be placed on a corner top of the screen
 - The appearance of the menu/close button should change if the menu is shown or collapsed
+
+Elapsed time: 2hrs 20’
