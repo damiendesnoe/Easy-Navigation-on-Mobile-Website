@@ -28,6 +28,7 @@
 /* Instructions for iPhone in Portrait Orientation mode */
 @media only screen and (min-width: 375px) and (orientation: portrait) {
 	.easy-nav > ul > li > a {
+		font-size: 1.2em;
 		line-height: 35px;
 	}
 }
