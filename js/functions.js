@@ -3,6 +3,7 @@
 	
 	function showHideMenu() {
 		document.getElementById("mobile-nav").classList.toggle("active");
-		console.log("nav’s classList: " + document.getElementById("mobile-nav").classList);
+		document.getElementById("nav-toggle").classList.toggle("active");
+		console.log("nav’s classList: " + document.getElementById("mobile-nav").classList + "\n" + "button's classList: " + document.getElementById("nav-toggle").classList);
 	}
 })();

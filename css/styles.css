@@ -5,6 +5,7 @@
 	* {
 		margin: 0;
 		padding: 0;
+		overflow-y: hidden;
 	}
 	
 	header {
@@ -23,54 +24,77 @@
 		background: none;
 		border: none;
 		border-left: 1px solid #DDD;
-		padding: 14px;
+		padding: 15px;
 		position: absolute;
 		right: 0;
 		vertical-align: middle;
 	}
 	
-	header > button > #bar1,
-	header > button > #bar2,
-	header > button > #bar3 {
-		height: 5px;
+	header > button > .bar1,
+	header > button > .bar2,
+	header > button > .bar3 {
+		height: 4px;
 		width: 35px;
 		background: #333;
-	}
-	
-	header > button > #bar2 {
-		margin: 6px 0;
-	}
-	
-	.easy-nav > ul {
-		transform: translateX(100%);
 		transition: 0.5s;
 	}
 	
-	nav.easy-nav.active > ul {
+	header > button#nav-toggle.active > .bar1 {
+		transform: rotate(45deg) translate(6px, 8px);
+	}
+	
+	header > button#nav-toggle.active > .bar2 {
+		width: 0;
+		margin: 6px auto;
+		opacity: 0;
+	}
+	
+	header > button#nav-toggle.active > .bar3 {
+		transform: rotate(-45deg) translate(6px, -8px);
+	}
+	
+	header > button > .bar2 {
+		margin: 6px 0;
+	}
+	
+	nav#mobile-nav {
+		height: 100%;
+		transform: translateX(100%);
+		transition: all 0.5s
+	}
+	
+	nav#mobile-nav.active,
+	nav#mobile-nav.active > ul > li {
+		width: 100%;
 		transform: translateX(0%);
 	}
-		
-	.easy-nav, .easy-nav > ul > li {
-		list-style: none;
+	
+	nav#mobile-nav.active > ul > li > a {
 		display: inline-block;
 		width: 100%;
+		transform: translateX(0%);
+	}
+	
+	nav#mobile-nav > ul > li {
+		display: inline-block;
+		list-style: none;
 	}
 
-	.easy-nav > ul > li > a {
+	nav#mobile-nav > ul > li > a {
 		display: inline-block;
-		width: 100%;
+		text-align: center;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid #DDD;
 		color: #555;
-		text-align: center;
 		text-decoration: none;
+		transition: all 0.5s;
 	}
 }
 
 /* Instructions for iPhone in Portrait Orientation mode */
 @media only screen and (min-width: 375px) and (orientation: portrait) {
-	.easy-nav > ul > li > a {
+	nav#mobile-nav > ul > li > a {
 		font-size: 1.4em;
 		line-height: 35px;
 	}
@@ -83,13 +107,13 @@
 		padding: 0;
 	}
 
-	.easy-nav, .easy-nav > ul > li {
+	nav#mobile-nav, nav#mobile-nav > ul > li {
 		list-style: none;
 		display: inline-block;
 		width: 100%;
 	}
 
-	.easy-nav > ul > li > a {
+	nav#mobile-nav > ul > li > a {
 		line-height: 25px;
 	}
 }
