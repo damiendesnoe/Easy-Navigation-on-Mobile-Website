@@ -19,4 +19,14 @@ SPECIFICATIONS
 - The menu/close button should be placed on a corner top of the screen
 - The appearance of the menu/close button should change if the menu is shown or collapsed
 
-Elapsed time: 2hrs 20’
+UPDATE 2017-10-09
+
+- The animations should be written only in CSS first then in JS if possible
+
+ANIMATIONS TO BUILD
+
+- Slide left - right - down
+- Fade in
+- Push left - right - down
+
+Elapsed time: 4hrs 45’
