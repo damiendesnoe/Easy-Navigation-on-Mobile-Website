@@ -29,4 +29,4 @@ ANIMATIONS TO BUILD
 - Fade in
 - Push left - right - down
 
-Elapsed time: 4hrs 45’
+Elapsed time: 11hrs 45’

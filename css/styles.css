@@ -70,7 +70,7 @@
 	}
 	
 	nav#mobile-nav.active > ul > li > a {
-		display: inline-block;
+		display: block;
 		width: 100%;
 		transform: translateX(0%);
 	}
@@ -81,14 +81,12 @@
 	}
 
 	nav#mobile-nav > ul > li > a {
-		display: inline-block;
 		text-align: center;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid #DDD;
 		color: #555;
 		text-decoration: none;
-		transition: all 0.5s;
 	}
 }
 
