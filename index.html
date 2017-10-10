@@ -12,14 +12,14 @@
 	<body>
 		<header>
 			<h1>Moto.Blog</h1>
-			
+
 			<button id="nav-toggle">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</button>
 		</header>
-		
+
 		<nav id="mobile-nav">
 			<ul>
 				<li><a href="#">Bien s'équiper</a></li>
@@ -30,15 +30,212 @@
 				<li><a href="#">Que faire en cas d'accident ?</a></li>
 			</ul>
 		</nav>
-		
+
 		<section>
 			<article>
 				<h1>Bienvenue !</h1>
-				
+
 				Le menu navigation de cette page s’affiche au dessus du texte sur les mobiles.
 			</article>
+
+			<div class="">
+				ABOUT  TEAM  WORK  BLOG  Submit a Project
+
+WHY YOU SHOULD STOP SUPPORTING IE10, IE9 AND IE8
+
+by Lubos Kmetko on February 17, 2016
+Published in Web Development • 23 Comments
+Don’t put your users at risk and stop supporting the legacy, insecure versions of Internet Explorer. Even if your stats suggest otherwise.
+
+The article was updated on 4/20/2017 to reflect Windows Vista end of support.
+
+On January 12, 2016 Microsoft announced end of support for IE10, IE9, and IE8 on Windows 7, Windows 8.1, and Windows 10. Internet Explorer 11 is now the last version of Internet Explorer on these platforms which will continue to receive security updates, compatibility fixes, and technical support.
+
+It doesn’t mean that all legacy IE versions were officially gone in 2016. For example, IE9 on Windows Vista SP2 or IE10 on Windows Server 2012 still got updates. In the case of IE9 it was until the end of Vista’s life on April 11, 2017.
+
+Take a look at the following table showing which versions are available on which OS and if they will receive updates and security fixes:
+
+IE8	IE9	IE10	IE11	Edge	Chrome	Firefox	Opera
+Windows XP	No	N/A	N/A	N/A	N/A	No **	Yes ***	Yes
+Windows Vista SP2	No	No *	N/A	N/A	N/A	No **	Yes ***	Yes
+Windows Server 2012	N/A	N/A	Yes	Yes	N/A	Yes	Yes	Yes
+Windows 7	No	No	No	Yes	N/A	Yes	Yes	Yes
+Windows 8.1	N/A	N/A	N/A	Yes	N/A	Yes	Yes	Yes
+Windows 10	N/A	N/A	N/A	Yes	Yes	Yes	Yes	Yes
+* ended on April 11, 2017
+** ended in April 2016
+*** until September 2017
+
+Don’t encourage risky behaviour
+
+In general it’s thought that if a browser has more than 1% share in your statistics, you should support it in some form. However, in the case of the old IE versions we need to look at that in context:
+
+Don’t we encourage risky behaviour by our users if we support insecure browsers?
+
+In fact, it’s highly probable that nine recently fixed vulnerabilities in Internet Explorer also exist in IE7 and IE8, and in IE9 and IE10 on Windows editions ineligible for patching. As Gregg Keizer states in the above article:
+
+The danger with known, but unpatched vulnerabilities is significant: Cyber criminals regularly parse updates and compare “before” and “after” code to determine what was changed.
+
+[…]
+
+In this case, the vulnerability found in, say, IE9 on Vista — which was patched this week — may give them insight into the location of the bug in the older IE8. From there, they can create an exploit for the unpatched browser.
+
+So what should you do?
+
+Even if a relevant number of your users still use legacy IE browsers, do not support them. If your site breaks in IE10, IE9 or IE8, let it break and force users to look for safer alternatives.
+
+What about those users which might be using the old but patched IE versions?
+
+IE9 users on Windows Vista SP2
+
+Windows Vista SP2 lifecycle ended on April 11, 2017, so it was still possible that some of your users used a patched version of this browser in 2016.
+
+I don’t think this was a reason to fix your site in IE9 either. You could use conditional comments and display message recommending Firefox or Opera to them. Be aware that Chrome will stop support for Vista in April 2016 so it won’t be a safe alternative anymore.
+
+IE on Windows Servers 2008 and 2012
+
+Don’t do anything here. Window Servers are most likely used by power users who use modern alternatives for their browsing or realize the consequences of using legacy browsers.
+
+For further details on browsers supported on Windows Servers and Windows Embedded Operating Systems check this page.
+
+Easier web development
+
+Once you stop worrying about legacy IE versions, your web development will be easier and more cost effective.
+
+Differences in supported features between IE10 and IE11 (which you still need to support) are not great, but the benefits are bigger if you drop IE9 and IE8 support. Not to mention you’ll have fewer browsers to test in.
+
+Share the article
+
+If you find this blog post interesting, we appreciate if you share it. Thank you.
+
+182
+137
+Learn how to build better websites
+
+Sign up to our blog to receive web design and web development tips.
+Your Email Address
+Sign Up
+About the author
+
+Lubos Kmetko
+Lubos Kmetko started to work for Xfive (formerly XHTMLized) as a front-end developer in 2006. He currently helps with business operations and writes for the Xfive blog.
+
+More articles from Lubos
+Comments
+WPDIV • February 26, 2016
+I hate IE always and luckily Microsoft buried them by announcing that stop supporting such crappy browsers. Why don't they merge their OS with third party browsers like Firefox, Chrome and Opera?
+Alberto Mendoza • February 26, 2016
+I see the point form the Tech perspective, however, it would be great to have a business perspective. There are plenty of sites supporting IE8-10, due that users are not able to upgrade their working computers, even those users represent a considerably amount of traffic, and stop supporting them means loosing users.
+This has been a intensive discussion in my company, and finally we agreed on building a brand new site with all the best of CSS3 and HTML5, and having our old site as a fallback for IE8-10 users.
+Dan • February 28, 2016
+I actually like IE and MS's new Edge browser too. Id always advise people to update to the latest version of their browser regardless of which browser they are using. This post applies to previous versions of chrome, safari and firefox too!! Updates include security patches and other bug fixes and people should not be lazy and keep themselves protected online by updating!
+Lubos Kmetko • February 29, 2016
+@alberto that's certainly a valid point, but one business perspective could be that of social responsibility. Many tech companies (thankfully) invest to various social responsibility programs so the question is - why not to give up the income from the IE8-IE10 users as a part of social responsibility program? In this case it would be educating users about safer browsing and improving the overall Internet security.
+Getting hacked can have serious consequences (especially in the business environment) which go far beyond the inconvenience of not being able to use the website with the old browsers. If users cannot upgrade their browsers there is definitely someone there who is responsible for that and should get the message.
+Spencer • March 1, 2016
+That's fine advice, except for an e-commerce site that cannot afford to refuse service to a significant portion of the population who knows nothing about how to find and install a new browser, and in some cases, don't know what a browser is! Sure, if an entire industry agreed to immediately shun older versions of IE, it would work fine. Otherwise, taking the action suggested merely directs customers to my competitors. No thanks.
+pregunton • March 21, 2016
+IE6 and IE7 ?
+Matthias • September 10, 2016
+We shouldn't make the decision for the users as to what browser they should use.
+They should decide themselves whether they care about being secure and if it's worth for them to upgrade.
+You can try to persuade them in that decision by not showing content but that won't work.
+Jack • September 26, 2016
+Matthias, it's not about making a decision for them it's just not wasting time and resources supporting people using 15 year old tech, it halts progress and causes developers to have to hold back on new features.
+When you buy a piece of tech you have to expect that things will need to be kept up to date and if it isnt your not going to get all the latest features when websites implement them such as when css3 was released.
+This is why browsers such as chrome and firefox and even the new microsoft edge are great since it upgrades without you knowing it's doing it. The further back you go the more cost is involved in keeping up support for old browsers and it gets to the point where it's just not worth it.
+Manav Misra • November 28, 2016
+Whole-heartedly agree! It's staggering to think of how much $$$, and, moreover, mental energy has been spent in making up or Microsoft's mistakes!
+DBurnett • December 29, 2016
+As a UX/UI professional I agree with this suggestion.
+If the user isn't able to update their IE browser on their current OS, then they can go with Chrome or Firefox. Microsoft should move away from the Web browser development game and stick with their flagship product, Office.
+James • January 14, 2017
+That's fine advice, except for an e-commerce site that cannot afford to refuse service to a significant portion of the population who knows nothing about how to find and install a new browser, and in some cases, don't know what a browser is! Sure, if an entire industry agreed to immediately shun older versions of IE, it would work fine. Otherwise, taking the action suggested merely directs customers to my competitors. No thanks.
+Regards,
+James @ https://www.webdesigngenie.co.uk/
+CStew • January 30, 2017
+@James, while I understand your position, you're only thinking about the now, not the future.
+By continuing to support these old browsers, we become the perpetuators of this very problem. The only way this problem is going to go away, is if people stop using it. And the only way people will stop using it, is if it stops working!
+Think of it like an investment, the quicker we stop supporting these old browsers, the quicker the uptake of newer technologies. All it takes is to update to a system that is capable of auto-updating to newer versions (like any modern browser).
+I believe a notice politely informing the user that their browser is outdated and insecure, and with a link to a page offering the user the possible alternatives, and instructions on how to get them set up on their computer. This technique, I've seen used on quite a few sites, and I think works well.
+But, I understand that many educational/corporate systems are slow to update their software to support the latest versions of browsers/operating systems. And they won't get any quicker if nobody is willing to make the move to a newer system.
+It's like we're stuck in gridlock.
+Brian • February 1, 2017
+@James You definitely bring up a valid business case for supporting older browsers. I'd be interested to see what some of your traffic data looks like and if we're talking about significantly lost revenue i.e. thousands of dollars vs. a lost sale here or there.
+The better option would be to have a conditional message that explains to users on older browsers that they are not secure and shouldn't be making purchases through ANY website without updating their browser.
+That way you're building trust as well as pushing technology forward. I doubt someone who reads a security prompt like that is going to shop at a competitor simply out of convenience. Many people on older technology are among the most fearful of online transactions to begin with.
+John • April 20, 2017
+All well and good, but it's not like anybody is still supporting IE8 because they *want* to. I run a SaaS where certain critical users are still unable to upgrade beyond IE7 (yes, you read correctly, and the date on this post is correct). Should I shut down my company and make a new product targeted at people who keep their software up-to-date?
+Lubos Kmetko • April 20, 2017
+@john thanks for the comment. Your case looks quite specific, usually not supporting old IEs means to abandon some small amount of traffic and income as a part of our social responsibility. If your business is dependent on critical users using old IEs, you need to support it but I would be looking at the ways how these users can upgrade their insecure OS. Such advise can be an added value of your business.
+tech4him • April 25, 2017
+If you are keeping the table updated, you might want to add a note that Firefox is planning on ending support for XP and Vista in September 2017. They have already ended feature updates. Here is their notice page: https://support.mozilla.org/en-US/kb/end-support-windows-xp-and-vista
+Lubos Kmetko • April 26, 2017
+Thanks @tech4him, updated.
+End User • May 13, 2017
+Even Simpler: Warn MS Users to Switch to Linux 8)
+Let them know Windows 10 is Malware w/ an OS!
+I switched from W7 to Fedora Linux which works fine for WebDev & Graphics ;)
+Dan • June 7, 2017
+The idea that users even care what tech people have to go through is a pipe-dream, especially given our salaries. Make it work is the montra, and don't make me do anything. If a company ignores that, they lose market share, which means they go out of business. This is why business people run businesses, and tech people do tech. Not a troll post, just stating facts - sorry if it offends anyone.
+Dan • June 7, 2017
+Also, I want to back up my previous post with data, according to netmarketshare.com, IE+Edge still holds ~18% market share. I'd ask anyone who disagrees to talk to their CEO about losing 18% market share and witness their response.
+Lubos Kmetko • June 7, 2017
+@dan thanks for the comment. The article only talks about the old insecure versions of IE (IE8, IE9, IE10), not about IE11 + Edge which we need to support. The market share of those old versions would be much smaller.
+Also the point of the article is that nowadays you can only run those old versions on old, insecure version of Windows. For people who do there are probably many more things not working as should, plus they are much more vulnerable to hacks and exploits.
+Raichel Simon • June 22, 2017
+I am not using any version of IE, I only used chrome and that is better than others. thanks for the kind information......
+ziomek • August 13, 2017
+Internet Explorer should be destroyed. We only need:
+- Chrome
+- Firefox
+- Opera
+- Vivaldi
+- Edge (but it sucks)
+- Safari (it sucks too)
+Would you like to add something?
+
+All fields are required. Your email address will not be published.
+
+
+Your Message
+
+Your Name
+
+Your Email
+Post Comment
+Struggling with lack of time or resources for web development? We can helpGet a Free Quote
+More from the blog
+
+
+August 24, 2017 by Lubos Kmetko
+Why Figma is the best for designer-developer cooperation
+
+July 27, 2017 by Lubos Kmetko
+How we hire great developers
+
+July 4, 2017 by Lubos Kmetko
+UI Design on Windows: Adobe XD, Figma, Affinity Designer
+Categories
+
+Case StudiesDesign, UI, UXInside XfiveOpen SourcePerformanceQuality AssuranceResponsive DesignThe InterviewedWeb Development
+Submit a Project
+Home About Team Work Blog Testimonials FAQ Jobs Contact
+Sign up to our blog for web design & web development tips.
+
+
+Your Email Address
+Sign Up
+Copyright © 2006 – 2017 Xfive.co Pty Ltd. ACN 160 801 285.
+SAN FRANCISCO
+MELBOURNE
+KRAKÓW
+Terms & Conditions
+Privacy Policy
+Cookie Policy
+			</div>
 		</section>
-		
+
 		<script src="js/functions.js" type="text/javascript"></script>
 	</body>
 </html>
