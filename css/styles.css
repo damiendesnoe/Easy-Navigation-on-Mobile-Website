@@ -3,6 +3,9 @@
 	padding: 0;
 	color: #AAA;
 	background: #222;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 	overflow-x: hidden;
 	font-family: Helvetica, Georgia, sans-serif, Arial, Serif;
 }
@@ -99,7 +102,6 @@ nav#mobile-nav > ul > li > a {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 1em;
 	padding: 15px 0;
 	border-bottom: 1px solid #555;
 	text-decoration: none;
@@ -122,6 +124,6 @@ a:hover, a:focus {
 mode*/
 @media only screen and (min-width: 480px) and (orientation: landscape) {
 	nav#mobile-nav > ul > li > a {
-		font-size: 0.7em;
+		
 	}
 }
