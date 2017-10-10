@@ -3,7 +3,7 @@
 	padding: 0;
 	color: #D20000;
 	background: #222;
-	overflow-y: hidden;
+	overflow: hidden;
 	font-family: Helvetica, Georgia, sans-serif, Arial, Serif;
 }
 
@@ -67,6 +67,7 @@ nav#mobile-nav {
 nav#mobile-nav.active,
 nav#mobile-nav.active > ul > li {
 	display: block;
+	overflow-x: hidden;
 	width: 100%;
 	/*transform: translateX(0%);*/
 	left: 0;
