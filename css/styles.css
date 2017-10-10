@@ -7,7 +7,9 @@
 	font-family: Helvetica, Georgia, sans-serif, Arial, Serif;
 }
 
-html.menu-active {
+html.menu-active,
+html.menu-active > body > header {
+	position: fixed;
 	overflow: hidden;
 }
 
