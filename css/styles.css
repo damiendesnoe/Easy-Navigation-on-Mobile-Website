@@ -5,21 +5,28 @@
 	* {
 		margin: 0;
 		padding: 0;
-		overflow-y: hidden;
+		color: #AAA;
+		background: #222;
+		overflow-x: hidden;
+		font-family: Helvetica, Georgia, sans-serif, Arial, Serif;
 	}
-	
+
+	body.menu-active {
+		position: fixed;
+	}
+
 	header {
 		position: relative;
 		border-bottom: 1px solid #DDD;
 	}
-	
+
 	header > h1 {
 		display: inline-block;
 		padding: 6px 15px 10px;
 		font-variant: small-caps;
 		color: #555;
 	}
-	
+
 	header > button {
 		background: none;
 		border: none;
@@ -29,7 +36,7 @@
 		right: 0;
 		vertical-align: middle;
 	}
-	
+
 	header > button > .bar1,
 	header > button > .bar2,
 	header > button > .bar3 {
@@ -38,43 +45,43 @@
 		background: #333;
 		transition: 0.5s;
 	}
-	
+
 	header > button#nav-toggle.active > .bar1 {
 		transform: rotate(45deg) translate(6px, 8px);
 	}
-	
+
 	header > button#nav-toggle.active > .bar2 {
 		width: 0;
 		margin: 6px auto;
 		opacity: 0;
 	}
-	
+
 	header > button#nav-toggle.active > .bar3 {
 		transform: rotate(-45deg) translate(6px, -8px);
 	}
-	
+
 	header > button > .bar2 {
 		margin: 6px 0;
 	}
-	
+
 	nav#mobile-nav {
 		height: 100%;
 		transform: translateX(100%);
 		transition: all 0.5s
 	}
-	
+
 	nav#mobile-nav.active,
 	nav#mobile-nav.active > ul > li {
 		width: 100%;
 		transform: translateX(0%);
 	}
-	
+
 	nav#mobile-nav.active > ul > li > a {
 		display: block;
 		width: 100%;
 		transform: translateX(0%);
 	}
-	
+
 	nav#mobile-nav > ul > li {
 		display: inline-block;
 		list-style: none;
