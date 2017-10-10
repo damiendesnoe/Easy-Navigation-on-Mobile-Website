@@ -61,7 +61,7 @@ nav#mobile-nav {
 	/*transform: translateX(100%);*/
 	width: 100%;
 	left: 100%;
-	transition: all 0.5s
+	transition: all 0.5s;
 }
 
 nav#mobile-nav.active,
@@ -74,19 +74,20 @@ nav#mobile-nav.active > ul > li {
 
 nav#mobile-nav.active > ul > li > a {
 	display: block;
-	text-transform: uppercase;
 	width: 100%;
 	/*transform: translateX(0%);*/
 	left: 0;
 }
 
 nav#mobile-nav > ul > li {
-	display: inline-block;
+	display: block;
 	list-style: none;
 }
 
 nav#mobile-nav > ul > li > a {
+	display: block;
 	text-align: center;
+	text-transform: uppercase;
 	font-size: 1.1em;
 	font-weight: bold;
 	padding: 15px 0;
