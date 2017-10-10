@@ -1,16 +1,18 @@
 * {
 	margin: 0;
 	padding: 0;
-	color: #D20000;
+	color: #AAA;
 	background: #222;
 	overflow-x: hidden;
 	font-family: Helvetica, Georgia, sans-serif, Arial, Serif;
 }
 
+/*Disable scrolling when the main menu is active*/
 body.menu-active {
 	position: fixed;
 }
 
+/*Header styles*/
 header {
 	position: relative;
 	border-bottom: 1px solid #555;
@@ -18,10 +20,12 @@ header {
 
 header > h1 {
 	display: inline-block;
+	color: #D20000;
 	padding: 6px 15px 10px;
 	font-variant: small-caps;
 }
 
+/*Nav button style*/
 header > button {
 	position: absolute;
 	right: 0;
@@ -33,13 +37,27 @@ header > button {
 	vertical-align: middle;
 }
 
-	header > button > .bar1,
-	header > button > .bar2,
-	header > button > .bar3 {
+/*Nav button drawing*/
+header > button > .bar1,
+header > button > .bar2,
+header > button > .bar3 {
 	height: 4px;
 	width: 35px;
 	background: #555;
 	transition: 0.5s;
+}
+
+header > button:hover {
+	cursor: pointer;
+}
+
+header > button:hover > .bar1,
+header > button:hover > .bar2,
+header > button:hover > .bar3,
+header > button:focus > .bar1,
+header > button:focus > .bar2,
+header > button:focus > .bar3 {
+	background: #D20000;
 }
 
 header > button#nav-toggle.active > .bar1 {
@@ -60,6 +78,7 @@ header > button > .bar2 {
 	margin: 6px 0;
 }
 
+/*Navigation menu style*/
 nav#mobile-nav {
 	position: fixed;
 	z-index: 1;
@@ -69,21 +88,6 @@ nav#mobile-nav {
 	border-top: 1px solid #555;
 	left: 100%;
 	transition: all 0.5s;
-}
-
-nav#mobile-nav.active,
-nav#mobile-nav.active > ul > li {
-	display: block;
-	overflow: hidden;
-	/*transform: translateX(0%);*/
-	left: 0;
-}
-
-nav#mobile-nav.active > ul > li > a {
-	display: block;
-	width: 100%;
-	/*transform: translateX(0%);*/
-	left: 0;
 }
 
 nav#mobile-nav > ul > li {
@@ -102,6 +106,19 @@ nav#mobile-nav > ul > li > a {
 	text-decoration: none;
 }
 
+/*Navigation menu apparition*/
+nav#mobile-nav.active {
+	left: 0;
+}
+
+/*Links hovering and focusing style*/
+a:hover, a:focus {
+	background: #111;
+	color: #D20000;
+	transition: 0.3s;
+}
+
+/*Style for screens in landscape mode*/
 @media only screen and (min-width: 480px) and (orientation: landscape) {
 	nav#mobile-nav > ul > li > a {
 		font-size: 0.7em;
