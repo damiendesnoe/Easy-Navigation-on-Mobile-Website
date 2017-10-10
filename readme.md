@@ -21,12 +21,14 @@ SPECIFICATIONS
 
 UPDATE 2017-10-09
 
-- The animations should be written only in CSS first then in JS if possible
+- The bigger part of animations is written in CSS when possible
 
 ANIMATIONS TO BUILD
 
-- Slide left - right - down
-- Fade in
-- Push left - right - down
-
-Elapsed time: 11hrs 45’
+- Slide left overlay [x] Elapsed time: 12hrs 45’
+- Slide right overlay
+- Slide down overlay
+- Fade in overlay
+- Push left
+- Push right
+- Push down
