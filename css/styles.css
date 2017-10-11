@@ -19,6 +19,7 @@ body.menu-active {
 header {
 	position: relative;
 	border-bottom: 1px solid #555;
+	z-index: 2;
 }
 
 header > h1 {
@@ -34,9 +35,9 @@ header > button {
 	position: absolute;
 	height: 100%;
 	border: none;
+	outline: none;
 	border-right: 1px solid #555;
 	padding: 15px;
-	/*vertical-align: top;*/
 }
 
 /*Nav button drawing*/
@@ -122,7 +123,7 @@ a:hover, a:focus {
 @media only screen and (min-width: 1024px) {
 	body.menu-active {
 		position: initial;
-		padding-top: 57px;
+		padding-top: 58px;
 	}
 
 	body.menu-active > header {
