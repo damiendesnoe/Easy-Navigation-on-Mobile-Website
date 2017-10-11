@@ -11,20 +11,31 @@
 body {
 	color: #AAA;
 	background: #222;
+	width: 100%;
 }
 
 /*Disable scrolling when the main menu is active*/
 body.menu-active {
 	position: fixed;
-	right: 100%;
+}
+
+#wrapper {
+	transform: translateX(0);
+	transition: 0.6s;
+}
+
+body.menu-active > #wrapper {
+	transform: translateX(-100%);
+	transition: 0.5s;
 }
 
 /*Header styles*/
 header {
 	position: relative;
 	z-index: 2;
+	width: 100%;
 	border-bottom: 1px solid #555;
-		background: #222;
+	background: #222;
 }
 
 header > h1 {
@@ -95,7 +106,7 @@ nav#mobile-nav {
 	width: 100%;
 	height: calc(100% - 55px);
 	right: -100%;
-		background: #222;
+	background: #222;
 	transition: all 0.5s;
 }
 
@@ -111,7 +122,7 @@ nav#mobile-nav > ul > li > a {
 	font-weight: bold;
 	padding: 15px 0;
 	border-bottom: 1px solid #555;
-		color: #AAA;
+	color: #AAA;
 	text-decoration: none;
 }
 
