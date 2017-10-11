@@ -38,6 +38,7 @@ header > button {
 	height: 100%;
 	background: none;
 	border: none;
+	outline: none;
 	border-left: 1px solid #555;
 	padding: 15px;
 	vertical-align: middle;
@@ -126,7 +127,7 @@ a:hover, a:focus {
 @media only screen and (min-width: 1024px) {
 	body.menu-active {
 		position: initial;
-		padding-top: 57px;
+		padding-top: 58px;
 	}
 
 	body.menu-active > header {
@@ -153,7 +154,7 @@ a:hover, a:focus {
 	}
 
 	nav#mobile-nav.active {
-		top: 57px;
+		top: 58px;
 	}
 
 	nav#mobile-nav > ul > li > a {
