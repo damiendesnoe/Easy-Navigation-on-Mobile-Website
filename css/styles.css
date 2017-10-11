@@ -87,7 +87,7 @@ nav#mobile-nav {
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-	border-top: 1px solid #555;
+	/*border-top: 1px solid #555;*/
 	right: -100%;
 	transition: all 0.5s;
 }
