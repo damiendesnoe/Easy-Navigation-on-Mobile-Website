@@ -133,6 +133,18 @@ a:hover, a:focus {
 		width: 100%;
 	}
 
+	header > button:focus > .bar1,
+	header > button:focus > .bar2,
+	header > button:focus > .bar3 {
+		background: #555;
+	}
+
+	header > button:hover > .bar1,
+	header > button:hover > .bar2,
+	header > button:hover > .bar3 {
+		background: #D20000;
+	}
+
 	nav#mobile-nav {
 		width: 300px;
 		right: -300px;
