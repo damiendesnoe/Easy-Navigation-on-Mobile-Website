@@ -85,7 +85,7 @@ nav#mobile-nav {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	height: calc(100% - 57px);
+	height: calc(100% - 55px);
 	left: -100%;
 	transition: all 0.5s;
 }
