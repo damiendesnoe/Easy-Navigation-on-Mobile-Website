@@ -26,7 +26,7 @@ UPDATE 2017-10-09
 ANIMATIONS TO BUILD
 
 - Slide left overlay [x] Elapsed time: 15hrs 30’
-- Slide right overlay
+- Slide right overlay [x] Elapsed time: 30'
 - Slide down overlay
 - Fade in overlay
 - Push left
