@@ -8,8 +8,10 @@
 
 		if(!document.body.classList.contains("menu-active")) {
 			document.getElementsByTagName("header")[0].style.position = "fixed";
+			document.body.style.paddingTop = "57px";
 			setTimeout(function () {
 				document.getElementsByTagName("header")[0].removeAttribute("style");
+				document.body.removeAttribute("style");
 			}, 100);
 		}
 	}
