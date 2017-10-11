@@ -86,7 +86,7 @@ nav#mobile-nav {
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-	right: -100%;
+	left: -100%;
 	transition: all 0.5s;
 }
 
@@ -108,7 +108,7 @@ nav#mobile-nav > ul > li > a {
 /*Navigation menu apparition*/
 nav#mobile-nav.active {
 	overflow: auto;
-	right: 0;
+	left: 0;
 }
 
 /*Links hovering and focusing style*/
@@ -149,12 +149,12 @@ a:hover, a:focus {
 
 	nav#mobile-nav {
 		width: 300px;
-		right: -300px;
-		border-left: 1px solid #555;
+		left: -300px;
+		border-right: 1px solid #555;
 	}
 
 	nav#mobile-nav.active {
-		right: 0;
+		left: 0;
 	}
 
 	nav#mobile-nav > ul > li > a {
