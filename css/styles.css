@@ -25,7 +25,7 @@ header > h1 {
 	display: inline-block;
 	color: #D20000;
 	padding: 6px 15px 10px;
-	margin-left: 80px;
+	margin-left: 70px;
 	font-variant: small-caps;
 }
 
@@ -129,6 +129,10 @@ a:hover, a:focus {
 		position: fixed;
 		top: 0;
 		width: 100%;
+	}
+
+	header > h1 {
+		margin-left: 80px;
 	}
 
 	header > button:focus > .bar1,
