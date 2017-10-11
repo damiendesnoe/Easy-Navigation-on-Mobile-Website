@@ -113,7 +113,7 @@ nav#mobile-nav > ul > li > a {
 /*Navigation menu apparition*/
 nav#mobile-nav.active {
 	overflow: auto;
-	top: 57px;
+	top: 58px;
 }
 
 /*Links hovering and focusing style*/
@@ -150,11 +150,6 @@ a:hover, a:focus {
 		width: 100%;
 		height: initial;
 		top: -100%;
-		/*border-left: 1px solid #555;*/
-	}
-
-	nav#mobile-nav.active {
-		top: 58px;
 	}
 
 	nav#mobile-nav > ul > li > a {
