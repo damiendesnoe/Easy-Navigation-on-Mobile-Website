@@ -25,19 +25,18 @@ header > h1 {
 	display: inline-block;
 	color: #D20000;
 	padding: 6px 15px 10px;
+	margin-left: 80px;
 	font-variant: small-caps;
 }
 
 /*Nav button style*/
 header > button {
 	position: absolute;
-	right: 0;
 	height: 100%;
-	background: none;
 	border: none;
-	border-left: 1px solid #555;
+	border-right: 1px solid #555;
 	padding: 15px;
-	vertical-align: middle;
+	/*vertical-align: top;*/
 }
 
 /*Nav button drawing*/
