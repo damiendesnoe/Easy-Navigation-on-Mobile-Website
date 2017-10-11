@@ -131,7 +131,6 @@ a:hover, a:focus {
 
 	body.menu-active > header {
 		position: fixed;
-		top: 0;
 	}
 
 	header > button:focus > .bar1,
