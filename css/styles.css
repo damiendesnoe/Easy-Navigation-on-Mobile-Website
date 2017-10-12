@@ -17,15 +17,17 @@ body {
 /*Disable scrolling when the main menu is active*/
 body.menu-active {
 	position: fixed;
+	overflow: hidden;
 }
 
 #wrapper {
 	transform: translateY(0);
+	transition: 0.4s;
 }
 
 body.menu-active > #wrapper {
 	transform: translateY(100%);
-	transition: 0.5s;
+	transition: 3s;
 }
 
 /*Header styles*/
@@ -101,7 +103,7 @@ header > button > .bar2 {
 /*Navigation menu style*/
 nav#mobile-nav {
 	position: fixed;
-	z-index: 1;
+
 	width: 100%;
 	height: calc(100% - 55px);
 	top: -100%;
