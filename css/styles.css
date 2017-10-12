@@ -191,6 +191,7 @@ a:hover, a:focus {
 	}
 
 	body.menu-active > #wrapper {
+		transform: translateX(0);
 		margin: 20px 350px 20px 50px;
 		transition: 0.5s;
 	}
