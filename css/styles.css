@@ -20,12 +20,11 @@ body.menu-active {
 }
 
 #wrapper {
-	transform: translateX(0);
-	transition: 0.6s;
+	transform: translateY(0);
 }
 
 body.menu-active > #wrapper {
-	transform: translateX(-100%);
+	transform: translateY(100%);
 	transition: 0.5s;
 }
 
@@ -41,7 +40,6 @@ header {
 header > h1 {
 	display: inline-block;
 	color: #D20000;
-	margin-left: 70px;
 	padding: 6px 15px 10px;
 	font-variant: small-caps;
 }
@@ -49,11 +47,12 @@ header > h1 {
 /*Nav button style*/
 header > button {
 	position: absolute;
+	right: 0;
 	height: 100%;
 	background: none;
 	border: none;
 	outline: none;
-	border-right: 1px solid #555;
+	border-left: 1px solid #555;
 	padding: 15px;
 	vertical-align: middle;
 }
@@ -105,9 +104,9 @@ nav#mobile-nav {
 	z-index: 1;
 	width: 100%;
 	height: calc(100% - 55px);
-	right: -100%;
+	top: -100%;
 	background: #222;
-	transition: all 0.5s;
+	transition: 1s;
 }
 
 nav#mobile-nav > ul > li {
@@ -128,7 +127,8 @@ nav#mobile-nav > ul > li > a {
 /*Navigation menu apparition*/
 nav#mobile-nav.active {
 	overflow: auto;
-	right: 0;
+	top: 58px;
+	transition: 0.5s;
 }
 
 /*Links style*/
@@ -159,10 +159,6 @@ a:hover, a:focus {
 		width: 100%;
 	}
 
-	header > h1 {
-		margin-left: 80px;
-	}
-
 	header > button:focus > .bar1,
 	header > button:focus > .bar2,
 	header > button:focus > .bar3 {
@@ -176,13 +172,7 @@ a:hover, a:focus {
 	}
 
 	nav#mobile-nav {
-		width: 300px;
-		left: -301px;
-		border-right: 1px solid #555;
-	}
-
-	nav#mobile-nav.active {
-		left: 0;
+		height: initial;
 	}
 
 	nav#mobile-nav > ul > li > a {
@@ -194,12 +184,12 @@ a:hover, a:focus {
 		padding: 50px 150px;
 		background: #DDD;
 		color: #333;
-		transition: 0.5s;
+		/*transition: 0.5s;*/
 	}
 
 	body.menu-active > #wrapper {
-		transform: translateX(0);
-		margin: 20px 50px 20px 350px;
-		transition: 0.5s;
+		transform: translateY(0);
+		margin: 290px 200px 20px 200px;
+		/*transition: 0.5s;*/
 	}
 }

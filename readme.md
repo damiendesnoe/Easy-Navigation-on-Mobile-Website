@@ -31,8 +31,8 @@ ANIMATIONS TO BUILD
 - Fade in overlay [x] Elapsed time: 30'
 - Push left 2D phone [x] Elapsed time: 45’
 - Push left 2D desktop [x] Elapsed time: 45’
-- Push right 2D
-- Push down 2D
+- Push right 2D [x] Elapsed time: 15'
+- Push down 2D [x] Elapsed time: 15'
 - Push left 3D
 - Push right 3D
 - Push down 3D
