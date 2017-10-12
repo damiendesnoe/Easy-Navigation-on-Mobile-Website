@@ -103,7 +103,6 @@ header > button > .bar2 {
 /*Navigation menu style*/
 nav#mobile-nav {
 	position: fixed;
-
 	width: 100%;
 	height: calc(100% - 55px);
 	top: -100%;
