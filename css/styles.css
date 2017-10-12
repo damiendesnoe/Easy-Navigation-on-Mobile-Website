@@ -21,16 +21,17 @@ body.menu-active {
 	position: fixed;
 	overflow: hidden;
 	perspective: 500px;
+	perspective-origin: center top;
 }
 
 #wrapper {
 	height: 100%;
-	transform-origin: bottom;
+	transform-origin: left;
 	transition: 0.5s;
 }
 
 body.menu-active > #wrapper {
-	transform: matrix3d(1, 0, 0, 0, 0, 0, -1, 0, 0, 1, 0, 0, 0, 0, -500, 1);
+	transform: matrix3d(0,0,1.00,0,0.00,1,0.00,0,-1,0,0,0,0,0,-500,1);
 	transition: 0.5s;
 }
 
@@ -107,11 +108,12 @@ header > button > .bar2 {
 /*Navigation menu style*/
 nav#mobile-nav {
 	position: fixed;
+	z-index: 1;
 	width: 100%;
 	height: calc(100% - 55px);
 	background: #222;
-	transform: rotateX(91deg);
-	transform-origin: top;
+	transform: matrix3d(0,0,-1.00,0,0.00,1,0.00,0,1,0,0,0,0,0,-500,1);
+	transform-origin: right;
 	backface-visibility: hidden;
 	transition: 0.5s;
 }
