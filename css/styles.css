@@ -151,8 +151,11 @@ a:hover, a:focus {
 
 
 @media only screen and (min-width: 1024px) {
-	body.menu-active {
+	body {
 		position: initial;
+	}
+
+	body.menu-active {
 		padding-top: 58px;
 	}
 
@@ -178,12 +181,12 @@ a:hover, a:focus {
 		background: #D20000;
 	}
 
-	nav#mobile-nav {
-		height: initial;
-	}
-
 	nav#mobile-nav > ul > li > a {
 		font-size: 0.75em;
+	}
+
+	nav#mobile-nav.active {
+		transition: 0.5s;
 	}
 
 	#wrapper {
@@ -191,12 +194,7 @@ a:hover, a:focus {
 		padding: 50px 150px;
 		background: #DDD;
 		color: #333;
+		backface-visibility: hidden;
 		transition: 0.5s;
 	}
-
-	/*body.menu-active > #wrapper {
-		transform: translateY(0);
-		margin: 290px 200px 20px 200px;
-		transition: 0.5s;
-	}*/
 }
