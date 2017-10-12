@@ -21,19 +21,17 @@ body.menu-active {
 	position: fixed;
 	overflow: hidden;
 	perspective: 500px;
-	perspective-origin: 50% 10%;
 }
 
 #wrapper {
 	height: 100%;
-	transform: rotateX(0);
 	transform-origin: bottom;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 body.menu-active > #wrapper {
-	transform: rotateX(-90deg);
-	transition: 0.5s;
+	transform: matrix3d(1, 0, 0, 0, 0, 0, -1, 0, 0, 1, 0, 0, 0, 0, -500, 1);
+	transition: 0.6s;
 }
 
 /*Header styles*/
@@ -111,10 +109,10 @@ nav#mobile-nav {
 	position: fixed;
 	width: 100%;
 	height: calc(100% - 55px);
-	/*top: -100%;*/
 	background: #222;
-	transform: rotateX(90deg);
+	transform: rotateX(91deg);
 	transform-origin: top;
+	backface-visibility: hidden;
 	transition: 0.5s;
 }
 
@@ -136,8 +134,7 @@ nav#mobile-nav > ul > li > a {
 /*Navigation menu apparition*/
 nav#mobile-nav.active {
 	overflow: auto;
-	/*top: 58px;*/
-	transform: rotateX(0);
+	transform: initial;
 	transition: 1s;
 }
 
