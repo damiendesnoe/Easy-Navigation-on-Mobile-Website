@@ -186,12 +186,12 @@ a:hover, a:focus {
 		padding: 50px 150px;
 		background: #DDD;
 		color: #333;
-		/*transition: 0.5s;*/
+		transition: 0.5s;
 	}
 
 	body.menu-active > #wrapper {
 		transform: translateY(0);
 		margin: 290px 200px 20px 200px;
-		/*transition: 0.5s;*/
+		transition: 0.5s;
 	}
 }
