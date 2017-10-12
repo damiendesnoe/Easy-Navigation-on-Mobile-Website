@@ -170,12 +170,12 @@ a:hover, a:focus {
 
 	nav#mobile-nav {
 		width: 300px;
-		right: -300px;
-		border-left: 1px solid #555;
+		left: -301px;
+		border-right: 1px solid #555;
 	}
 
 	nav#mobile-nav.active {
-		right: 0;
+		left: 0;
 	}
 
 	nav#mobile-nav > ul > li > a {
@@ -192,7 +192,7 @@ a:hover, a:focus {
 
 	body.menu-active > #wrapper {
 		transform: translateX(0);
-		margin: 20px 350px 20px 50px;
+		margin: 20px 50px 20px 350px;
 		transition: 0.5s;
 	}
 }
