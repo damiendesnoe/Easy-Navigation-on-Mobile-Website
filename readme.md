@@ -34,5 +34,5 @@ ANIMATIONS TO BUILD
 - Push right 2D [x] Elapsed time: 15'
 - Push down 2D [x] Elapsed time: 30'
 - Push left 3D [x] Elapsed time: 45’
-- Push right 3D
+- Push right 3D [x] Elapsed time: 5'
 - Push down 3D [x] Elapsed time: 2hrs 30’
