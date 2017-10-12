@@ -21,12 +21,13 @@ body.menu-active {
 }
 
 #wrapper {
-	transform: translateY(0);
+	transform: rotateX(0);
+	transform-origin: bottom;
 	transition: 0.4s;
 }
 
 body.menu-active > #wrapper {
-	transform: translateY(100%);
+	transform: rotateX(-90deg);
 	transition: 3s;
 }
 
@@ -103,11 +104,12 @@ header > button > .bar2 {
 /*Navigation menu style*/
 nav#mobile-nav {
 	position: fixed;
-
 	width: 100%;
 	height: calc(100% - 55px);
-	top: -100%;
+	/*top: -100%;*/
 	background: #222;
+	transform: rotateX(90deg);
+	transform-origin: top;
 	transition: 1s;
 }
 
@@ -129,7 +131,8 @@ nav#mobile-nav > ul > li > a {
 /*Navigation menu apparition*/
 nav#mobile-nav.active {
 	overflow: auto;
-	top: 58px;
+	/*top: 58px;*/
+	transform: rotateX(0);
 	transition: 0.5s;
 }
 
