@@ -25,7 +25,7 @@ body.menu-active {
 }
 
 body.menu-active > #wrapper {
-	transform: translateX(-100%);
+	transform: translateX(100%);
 	transition: 0.5s;
 }
 
@@ -105,7 +105,7 @@ nav#mobile-nav {
 	z-index: 1;
 	width: 100%;
 	height: calc(100% - 55px);
-	right: -100%;
+	left: -100%;
 	background: #222;
 	transition: all 0.5s;
 }
@@ -128,7 +128,7 @@ nav#mobile-nav > ul > li > a {
 /*Navigation menu apparition*/
 nav#mobile-nav.active {
 	overflow: auto;
-	right: 0;
+	left: 0;
 }
 
 /*Links style*/
